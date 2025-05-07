@@ -1,4 +1,13 @@
 #caps lockをctrlに変更
+#コンソールでもGUI(GNOMEデスクトップ)でもCaps-LockをCtrlにする方法
 1.sudo vim /etc/default/keyboard
 2.ファイル内のXKBOPTIONS=""を"ctrl:nocaps"に変更
 3.再起動
+#元に戻す方法
+⚠GNOMEデスクトップ(GUI)は独自にキーボード設定を保持するため、/etc/default/keyboardを""にするだけでは元に戻らない
+
+キーボードオプションを確認：
+gsettings get org.gnome.desktop.input-sources xkb-options
+
+元に戻す(リセット)
+gsettings reset org.gnome.desktop.input-sources xkb-options
