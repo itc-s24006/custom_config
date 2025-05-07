@@ -1,0 +1,4 @@
+#caps lockをctrlに変更
+1.sudo vim /etc/default/keyboard
+2.ファイル内のXKBOPTIONS=""を"ctrl:nocaps"に変更
+3.再起動
