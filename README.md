@@ -1,0 +1,2 @@
+# custom_config
+カスタマイズのメモ
