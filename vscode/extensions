@@ -1,0 +1,13 @@
+##拡張機能のカスタマイズ
+
+#zenkakuの常時起動
+
+zenkaku ... 全角スペースに色がつく拡張機能。
+zenkakuはインストールしただけだと常時起動にはならず、毎回有効化しないといけないから
+設定ファイルを編集して常時起動する
+
+設定ファイルのパス
+/home/ユーザ名/.vscode/extensions/mosapride.zenkaku-0.0.3/extension.js
+
+1.ターミナル上かVSCodeの「フォルダを開く」から右クリックで隠しファイルを表示してファイルにアクセスする
+2.5行目くらいのvar enabled = false;をtrueに変更すればOK！！
